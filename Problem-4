@@ -1,0 +1,13 @@
+//To find out particular day that can occur in specified no.of.days
+t=int(input())
+for i in range(t):
+    n=int(input())
+    if(n==0 or n==1):
+        print("0")
+    else:
+        q=n//7
+        r=n%7
+        if r>=2:
+            print(q+1)
+        else:
+            print(q)
